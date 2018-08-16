@@ -1,0 +1,120 @@
+@charset "utf-8";
+.nav{
+	height: 28px;
+	width: 100%;
+	background-color: #F5F5F5;
+	line-height: 28px;
+	text-align: center;
+}
+.nav .nav-con{
+	position: relative;
+	z-index: 2;
+}
+.nav .nav-con>div.city{
+	height: 27px;
+	width: 46px;
+	float: left;
+	position: relative;
+	left: 0;
+	top: -1px;
+	padding: 0 23px 0 15px;
+	border: 1px solid #F5F5F5;
+	line-height: 28px;
+	color: #333;
+	
+}
+.nav .nav-con>div.city i{
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	line-height: 8px;
+	color: #999999;
+	top: 10px;
+	right: 9px;
+}
+.nav .nav-con .city-con-down{
+	height: 220px;
+	width: 470px;
+	position: absolute;
+	border: 1px solid #CCCCCC;
+	top: 28px;
+	left: -1px;
+	background-color: #fff;
+	display: none;
+}
+.nav .nav-con>div.city:hover{
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	background-color: #fff;
+}
+.nav .nav-con>div.city:hover::before{
+	content: "";
+	height: 2px;
+	width: 84px;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	z-index: 1000;
+	background: #fff;
+}
+.nav .nav-con>div.city:hover .city-con-down{
+	display: block;
+	top: 26px;
+}
+.nav .nav-con .city-con-down:hover{
+	display: block;
+	top: 26px;
+}
+.nav .nav-con>ul>li{
+	position: relative;
+	height: 28px;
+	padding: 0 20px 0 13px;
+	float: right;
+}
+.nav .nav-con>ul>li:nth-child(5)~ li i:nth-child(2){
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	font-size: 12px;
+}
+.nav .nav-con>ul>li:nth-child(2)>.icon-phone{
+	position: relative;
+	top: -1px;
+	height: 14px;
+	width: 10px;
+	background: url(../images/icon-little.png) no-repeat -294px -142px;
+}
+.nav .nav-con>ul>li>i:nth-child(3){
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	font-size: 12px;
+
+}
+.nav .nav-con>ul>li:nth-child(7)>i:nth-child(1){
+	height: 18px;
+	width: 15px;
+	position: relative;
+	background: url(../images/gif-icon.gif) no-repeat 0 0;
+	top: -5px;
+}
+.nav .nav-con>ul>li:nth-child(1):hover i.icon-triangle-copy::before{
+	content: "\e510";
+	color: #f10180
+}
+.nav .nav-con>ul>li:nth-child(3):hover i.icon-triangle-copy::before{
+	content: "\e510";
+	color: #f10180
+}
+.nav .nav-con>ul>li:nth-child(4):hover i.icon-triangle-copy::before{
+	content: "\e510";
+	color: #f10180
+}
+.nav .nav-con>ul>li:nth-child(5):hover i.icon-triangle-copy::before{
+	content: "\e510";
+	color: #f10180
+}
